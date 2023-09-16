@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>4.3_Param_tag</display-name>
+  <welcome-file-list>
+    <welcome-file>NewFile.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>Username</param-name>
+    <param-value>System</param-value>
+  </context-param>
+  <context-param>
+    <param-name>Password</param-name>
+    <param-value>123</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>ServletFirst</display-name>
+    <servlet-name>ServletFirst</servlet-name>
+    <servlet-class>param_Servlets.ServletFirst</servlet-class>
+    <init-param>
+      <param-name>Processor</param-name>
+      <param-value>i</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletFirst</servlet-name>
+    <url-pattern>/ServletFirst</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletSecond</display-name>
+    <servlet-name>ServletSecond</servlet-name>
+    <servlet-class>param_Servlets.ServletSecond</servlet-class>
+    <init-param>
+      <param-name>VCS</param-name>
+      <param-value>GitHub</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletSecond</servlet-name>
+    <url-pattern>/ServletSecond</url-pattern>
+  </servlet-mapping>
+</web-app>
