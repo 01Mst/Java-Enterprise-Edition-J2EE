@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<center>Registration Form</center>
+</head>
+<body bgcolor="pink">
+<form method="post" action="./RegistrationServlet">
+
+User Name     : <input type="text" name="username" style="width: 205px; "/><br>
+Password      :   <input type="password" name="password" style="width: 215px; "/><br>
+Qualification : <input type="checkbox" name="qualification" value="B.Sc."/>B.Sc
+                <input type="checkbox" name="qualification" value="B.C.A."/>B.C.A.
+                <input type="checkbox" name="qualification" value="B.E."/>B.E.
+                <br>
+Gender        : <input type="radio" name="gender" value="male"/>Male
+				<input type="radio" name="gender" value="male"/>Female
+				<br>
+Technologies  : <select name="technologies" size="3" multiple>
+                <option value="J2SE">J2SE</option>
+                <option value="J2EE">J2EE</option>
+                <option value="DSA">DSA</option></select><br><br>	
+Address		  : <input type="textarea" name="address" rows="5" cols="25"/>
+                <br><br>
+                
+                
+                <input type="submit" value="Register"/>             			
+                
+
+</form>
+</body>
+</html>
